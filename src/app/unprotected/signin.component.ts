@@ -7,13 +7,13 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
         <form [formGroup]="myForm" (ngSubmit)="onSignin()">
             <div class="input-group">
                 <label for="email">E-Mail</label>
-                <input formControlName="email" type="email" id="email">
+                <input class="form-control" formControlName="email" type="email" id="email">
             </div>
             <div class="input-group">
                 <label for="password">Password</label>
-                <input formControlName="password" type="password" id="password">
+                <input class="form-control" formControlName="password" type="password" id="password">
             </div>
-            <button type="submit" [disabled]="!myForm.valid">Sign In</button>
+            <button class="btn" type="submit" [disabled]="!myForm.valid">Sign In</button>
         </form>
     `
 })
